@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="571.0" prefWidth="782.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="redSocial.controllers.crearPublicacion">
+   <children>
+      <RadioButton fx:id="publicacion" layoutX="22.0" layoutY="79.0" mnemonicParsing="false" onAction="#setPublicacion" prefHeight="34.0" prefWidth="117.0" text="TEXTO">
+         <font>
+            <Font name="System Bold" size="12.356435775756836" />
+         </font></RadioButton>
+      <RadioButton fx:id="evento" layoutX="111.0" layoutY="79.0" mnemonicParsing="false" onAction="#setEvento" prefHeight="34.0" prefWidth="117.0" text="EVENTO">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></RadioButton>
+      <RadioButton fx:id="enlace" layoutX="204.0" layoutY="79.0" mnemonicParsing="false" onAction="#setEnlace" prefHeight="34.0" prefWidth="117.0" text="ENLACE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></RadioButton>
+      <Label layoutX="248.0" layoutY="26.0" text="REALIZAR PUBLICACIÓN">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <padding>
+            <Insets left="5.0" />
+         </padding>
+      </Label>
+      <TextArea fx:id="mensajeTxt" layoutX="24.0" layoutY="261.0" prefHeight="299.0" prefWidth="490.0" style="-fx-border-color: black; -fx-border-width: 0.5; -fx-border-radius: 3;" />
+      <Label layoutX="28.0" layoutY="216.0" text="MENSAJE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="133.0" text="CUPOS">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="26.0" layoutY="172.0" prefHeight="0.0" prefWidth="38.0" text="URL">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="cuposTxt" layoutX="86.0" layoutY="129.0" prefHeight="29.0" prefWidth="199.0" style="-fx-border-color: black; -fx-border-radius: 5; -fx-border-width: 0.5;">
+         <font>
+            <Font size="11.0" />
+         </font></TextField>
+      <TextField fx:id="urlTxt" layoutX="85.0" layoutY="169.0" prefHeight="27.0" prefWidth="669.0" style="-fx-border-color: black; -fx-border-radius: 5; -fx-border-width: 0.5;">
+         <font>
+            <Font size="11.0" />
+         </font></TextField>
+      <Button layoutX="609.0" layoutY="17.0" mnemonicParsing="false" onAction="#crearPublicacion" prefHeight="41.0" prefWidth="150.0" styleClass="registrarButton" stylesheets="@../css/barraStyle.css" text="PUBLICAR">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="64.0" fitWidth="55.0" layoutX="193.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/sheep.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="13.0" layoutY="18.0" mnemonicParsing="false" onAction="#volver" styleClass="ingresarButton" stylesheets="@../css/barraStyle.css" text="VOLVER">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Label layoutX="23.0" layoutY="237.0" text="¿Qué deseas escribir?" />
+      <Label layoutX="570.0" layoutY="216.0" text="ETIQUETAR AMIGOS">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="579.0" layoutY="237.0" text="Etiqueta a tus amigos" />
+      <ListView fx:id="amigos" layoutX="526.0" layoutY="261.0" prefHeight="299.0" prefWidth="245.0" style="-fx-border-color: black; -fx-border-width: 0.5;" />
+   </children>
+</AnchorPane>

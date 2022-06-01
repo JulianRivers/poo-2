@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="482.0" prefWidth="444.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.InicioController">
+   <children>
+      <Button layoutX="279.0" layoutY="40.0" mnemonicParsing="false" onAction="#retirar" prefHeight="25.0" prefWidth="125.0" text="Retirar Vehiculo" />
+      <Button layoutX="279.0" layoutY="80.0" mnemonicParsing="false" onAction="#ingresar" prefHeight="25.0" prefWidth="125.0" text="Ingresar Vehiculo" />
+      <CheckBox fx:id="ckbCarro" layoutX="39.0" layoutY="44.0" mnemonicParsing="false" onAction="#setCarro" text="Carro" />
+      <CheckBox fx:id="ckbMoto" layoutX="39.0" layoutY="84.0" mnemonicParsing="false" onAction="#setMoto" text="Moto" />
+      <ListView fx:id="lvVehiculos" layoutX="40.0" layoutY="270.0" prefHeight="178.0" prefWidth="365.0" />
+      <CheckBox fx:id="ckbBicicleta" layoutX="39.0" layoutY="126.0" mnemonicParsing="false" onAction="#setBicicleta" text="Bicicleta" />
+      <Label fx:id="lblRespuesta" layoutX="40.0" layoutY="176.0" />
+      <Button layoutX="279.0" layoutY="120.0" mnemonicParsing="false" onAction="#abrirAgenteExterno" prefHeight="25.0" prefWidth="125.0" text="Agente Americano" />
+      <Button layoutX="279.0" layoutY="164.0" mnemonicParsing="false" onAction="#abrirAgenteEuropeo" prefHeight="25.0" prefWidth="125.0" text="Agente Europeo" />
+      <Button layoutX="279.0" layoutY="206.0" mnemonicParsing="false" onAction="#abrirAgenteExterno" prefHeight="25.0" prefWidth="125.0" text="Suscripciones" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="581.0" prefWidth="887.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="redSocial.controllers.LoginPageController">
+   <children>
+      <HBox layoutY="6.0" prefHeight="575.0" prefWidth="887.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="575.0" prefWidth="449.0" style="-fx-background-color: white;">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/sheep.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </ImageView>
+                  <Label fx:id="usuarioID" alignment="CENTER" contentDisplay="TOP" ellipsisString="" nodeOrientation="LEFT_TO_RIGHT" prefHeight="23.0" prefWidth="395.0" text="Nickname" textOverrun="WORD_ELLIPSIS">
+                     <font>
+                        <Font name="Tahoma" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets right="315.0" />
+                     </padding>
+                  </Label>
+                  <TextField fx:id="userTxt" alignment="TOP_LEFT" nodeOrientation="LEFT_TO_RIGHT" prefHeight="27.0" prefWidth="399.0">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="20.0" right="20.0" top="5.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Label text="Contraseña">
+                     <font>
+                        <Font name="Tahoma" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets right="310.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="passwordTxt" alignment="TOP_LEFT" nodeOrientation="LEFT_TO_RIGHT" prefHeight="27.0" prefWidth="399.0">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="5.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <HBox alignment="CENTER" prefHeight="30.0" prefWidth="448.0" spacing="30.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#ingresar" styleClass="ingresarButton" stylesheets="@../css/barraStyle.css" text="Ingresar">
+                           <font>
+                              <Font name="Tahoma" size="12.0" />
+                           </font>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#registrar" styleClass="registrarButton" stylesheets="@../css/barraStyle.css" text="Registrar">
+                           <font>
+                              <Font name="Tahoma" size="12.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="575.0" prefWidth="442.0" style="-fx-background-color: white;">
+               <children>
+                  <ImageView fx:id="loginImage" fitHeight="376.0" fitWidth="378.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/conifer-order-received.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

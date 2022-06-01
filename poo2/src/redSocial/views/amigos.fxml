@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="458.0" prefWidth="654.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="redSocial.controllers.AmigosController">
+   <children>
+      <ListView fx:id="amigosListView" layoutX="63.0" layoutY="148.0" prefHeight="206.0" prefWidth="200.0" style="-fx-border-color: black; -fx-border-width: 0.5;" />
+      <Label fx:id="profileName" alignment="TOP_LEFT" layoutX="62.0" layoutY="32.0" prefHeight="70.0" prefWidth="679.0" text="NOMBRE DE PERFIL">
+         <font>
+            <Font name="Segoe UI Black" size="48.0" />
+         </font>
+      </Label>
+      <Label layoutX="62.0" layoutY="130.0" text="TUS AMIGOS SON">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button layoutX="62.0" layoutY="361.0" mnemonicParsing="false" onAction="#volver" prefHeight="25.0" prefWidth="200.0" styleClass="ingresarButton" stylesheets="@../css/barraStyle.css" text="VOLVER">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="293.0" layoutY="180.0" mnemonicParsing="false" onAction="#agregar" prefHeight="38.0" prefWidth="201.0" styleClass="registrarButton" stylesheets="@../css/barraStyle.css" text="AGREGAR">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="287.0" fitWidth="132.0" layoutX="500.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/taxi-girl-1.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="amigoTxt" layoutX="294.0" layoutY="147.0" prefHeight="25.0" prefWidth="200.0" style="-fx-border-color: black; -fx-border-width: 0.5;" />
+      <Label layoutX="296.0" layoutY="130.0" text="BUSCAR AMIGO">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="respuesta" layoutX="296.0" layoutY="229.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

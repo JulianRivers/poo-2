@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+
+<MenuBar fx:id="myMenuBar" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" 
+fx:controller="poo2.parqueadero.controllers.MenuBarController">
+	<menus>
+		<Menu mnemonicParsing="false" text="Registro">
+			<items>
+				<MenuItem mnemonicParsing="false" onAction="#handleIngresarCarroMenu" text="Carro" />
+				<MenuItem mnemonicParsing="false" onAction="#handleIngresarMotoMenu" text="Moto" />
+			</items>
+		</Menu>
+		<Menu mnemonicParsing="false" text="Opciones">
+			<items>
+				<MenuItem mnemonicParsing="false" onAction="#handleListarMenu" text="Listar" />
+				<MenuItem mnemonicParsing="false" onAction="#handleInicioMenu" text="Inicio" />
+			</items>
+		</Menu>
+	</menus>
+</MenuBar>

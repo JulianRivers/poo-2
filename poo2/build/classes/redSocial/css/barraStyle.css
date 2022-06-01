@@ -1,0 +1,97 @@
+.ingresarButton
+{
+    -fx-border-color: #5432B0;
+    -fx-background-color:   white;
+    -fx-text-fill: black;
+    -fx-background-insets: 5;
+    -fx-border-insets:5;
+    -fx-border-width: 0.5;
+    -fx-min-width: 100px;
+   
+}
+
+.registrarButton
+{
+    -fx-border-color: #5432B0;
+    -fx-background-color:   #5432B0;
+    -fx-text-fill: white;
+    -fx-background-insets: 5;
+    -fx-border-insets:5;
+    -fx-min-width: 100px;
+   
+}
+
+.registrarButton:hover
+{
+    -fx-border-color: #C7C7F8;
+    -fx-outline-color: #C7C7F8;
+    -fx-outline-width: 200px;
+    -fx-text-fill: white;
+    -fx-background-color: #6546B7;
+   
+}
+
+
+.newsButton
+{
+    -fx-border-color: #5432B0;
+    -fx-background-color:   #5432B0;
+    -fx-text-fill: white;
+    -fx-background-insets: 5;
+    -fx-border-insets:5;
+    -fx-min-width: 100px;
+   
+}
+
+.newsButton:hover
+{
+    -fx-border-color: #C7C7F8;
+    -fx-outline-color: #C7C7F8;
+    -fx-outline-width: 200px;
+    -fx-text-fill: white;
+    -fx-background-color: #6546B7;
+   
+}
+
+.friendsButton
+{
+    -fx-border-color: #5432B0;
+    -fx-background-color:   #5432B0;
+    -fx-text-fill: white;
+    -fx-background-insets: 5;
+    -fx-border-insets:5;
+    -fx-min-width: 100px;
+   
+}
+
+.friendsButton:hover
+{
+    -fx-border-color: #C7C7F8;
+    -fx-outline-color: #C7C7F8;
+    -fx-outline-width: 200px;
+    -fx-text-fill: white;
+    -fx-background-color: #6546B7;
+   
+}
+
+.groupsButton
+{
+    -fx-border-color: #5432B0;
+    -fx-background-color:   #5432B0;
+    -fx-text-fill: white;
+    -fx-background-insets: 5;
+    -fx-border-insets:5;
+    -fx-min-width: 100px;
+   
+}
+
+.groupsButton:hover
+{
+    -fx-border-color: #C7C7F8;
+    -fx-outline-color: #C7C7F8;
+    -fx-outline-width: 200px;
+    -fx-text-fill: white;
+    -fx-background-color: #6546B7;
+   
+}
+

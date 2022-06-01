@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="231.0" prefWidth="305.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.europea.EropeaAdapterController">
+   <children>
+      <Label layoutX="22.0" layoutY="61.0" text="Carros" />
+      <Label layoutX="23.0" layoutY="104.0" text="Motos" />
+      <Label layoutX="22.0" layoutY="147.0" text="Bicicletas" />
+      <TextField fx:id="txtCarros" editable="false" layoutX="90.0" layoutY="57.0" text="0" />
+      <TextField fx:id="txtMotos" editable="false" layoutX="90.0" layoutY="100.0" text="0" />
+      <TextField fx:id="txtBicicletas" editable="false" layoutX="90.0" layoutY="143.0" text="0" />
+      <Label layoutX="22.0" layoutY="192.0" text="Vehiculos" />
+      <TextField fx:id="txtVehiculos" layoutX="90.0" layoutY="188.0" text="0" />
+      <Label layoutX="33.0" layoutY="18.0" text="Agente Europeo" />
+   </children>
+</AnchorPane>

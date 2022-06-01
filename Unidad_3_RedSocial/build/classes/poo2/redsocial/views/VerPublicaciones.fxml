@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.GridPane?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="432.0" prefWidth="494.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="poo2.redsocial.controllers.PublicacionController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="123.0" minWidth="10.0" prefWidth="72.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="347.0" minWidth="10.0" prefWidth="347.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="183.0" minWidth="10.0" prefWidth="48.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="79.0" minHeight="10.0" prefHeight="21.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="353.0" minHeight="10.0" prefHeight="353.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="178.0" minHeight="9.0" prefHeight="9.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label style="-fx-label-padding: 5px;" text="Usuario" />
+      <ComboBox fx:id="cmbUsuarios" prefHeight="27.0" prefWidth="322.0" GridPane.columnIndex="1" />
+      <TextArea fx:id="taPublicaciones" prefHeight="154.0" prefWidth="472.0" GridPane.columnSpan="3" GridPane.rowIndex="1" />
+      <Label style="-fx-label-padding: 5px;" text="Publicación" GridPane.rowIndex="2" />
+      <TextField fx:id="txPublicacion" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <Button mnemonicParsing="false" onAction="#handleVerButtonAction" text="Ver" GridPane.columnIndex="2" />
+      <Button mnemonicParsing="false" onAction="#handleEnviarButtonAction" text="Enviar" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+   </children>
+</GridPane>
